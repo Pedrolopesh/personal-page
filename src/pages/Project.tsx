@@ -86,7 +86,7 @@ const Project = () => {
 
   const setbodyBg = () => {
     const body = document.querySelector("body");
-    body.classList.add("it_bg");
+    body.classList.add("darken_blue_bg");
   };
 
   const returnPage = () => {
@@ -102,7 +102,13 @@ const Project = () => {
   return (
     <div>
       <HeadPages />
-      <HeaderOptions />
+      <HeaderOptions
+        props={{
+          showHeaderProps: true,
+          startHidenHeader: false,
+          hideOnScrollTop: false,
+        }}
+      />
       <ChangeLang />
       {Object.keys(router.query).length === 0 ? (
         <GalleryImagens images={photos} />

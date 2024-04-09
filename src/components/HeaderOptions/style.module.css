@@ -3,7 +3,8 @@
     box-shadow: 1px -5px 60px #00012c;
     max-width: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
+    z-index: 9999999;
     top: 0;
 }
 
@@ -138,6 +139,43 @@
 .containerDesktop {
     display: flex;
     align-items: center;
+}
+
+.startHidenHeader {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.ShowHeaderAnimation {
+  opacity: 1;
+  transform: translateY(0);
+  animation: animationShowOptions 1s ease;
+}
+
+
+@keyframes animationShowOptions {
+  0% {
+    transform: translateY(-150%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.HideHeaderAnimation {
+  transform: translateY(-100%);
+  animation: animationHideOptions 1s ease-out;
+}
+
+@keyframes animationHideOptions {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-150%);
+  }
 }
 
 @media screen and (max-width: 800px) {

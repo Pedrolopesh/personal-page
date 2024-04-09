@@ -1,40 +1,43 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { AiFillEye } from "react-icons/ai";
-import { HiOutlineTerminal, HiMenu } from "react-icons/hi";
+import { HiMenu } from "react-icons/hi";
 import { GrClose } from "react-icons/gr";
 import { useTranslation } from "react-i18next";
 import style from "./style.module.css";
 import { useRouter } from "next/router";
-import Logo from "../../assets/icons/logo";
 import LinkOptions from "./LinkOptions";
-const HeaderOptions = () => {
+import useHeaderOptions from "./useHeaderOptions";
+import { IPropsHeader } from "./headerOptions";
+
+const HeaderOptions = (props: IPropsHeader) => {
   const router = useRouter();
-  const { t } = useTranslation();
   const [sourceRoute, setSourceRoute] = useState("");
 
-  const handleClick = (route: string) => {
-    // setVisibleModal(!visibleModal)
-    router.push(route);
-  };
-
   const [visibleModal, setVisibleModal] = React.useState(false);
-
-  const checkPath = () => {
-    if (sourceRoute === "/DesignPage") {
-      return "/DesignPage";
-    } else {
-      return "/TiPage";
-    }
-  };
 
   useEffect(() => {
     const sourceRoute = localStorage.getItem("sourceRoute");
     setSourceRoute(sourceRoute);
   }, [sourceRoute]);
 
+  const {
+    showHeaderProps = false,
+    startHidenHeader,
+    hideOnScrollTop,
+  } = props.props || {};
+
+  const { showHeader, alreadyTriggered } = useHeaderOptions({
+    props: { showHeaderProps, hideOnScrollTop, startHidenHeader },
+  });
+
   return (
-    <div className={style.containerHeaderOptions}>
+    <div
+      className={`
+      ${startHidenHeader && !alreadyTriggered ? style.startHidenHeader : ""}
+      ${showHeader ? style.ShowHeaderAnimation : style.HideHeaderAnimation}  ${
+        style.containerHeaderOptions
+      }`}
+    >
       <div className={style.containerHeaderOptionsContent}>
         <Link href="/" passHref>
           {/* <Logo classParam={style.logoHeaderOptions}/> */}

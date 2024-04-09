@@ -1,13 +1,15 @@
 import React, { useEffect } from "react";
+import { useRouter } from "next/router";
+
 import HeadPages from "../components/HeadPages";
 import ChangeLang from "../components/ChangeLang";
 import HomeBanner from "../components/Home/HomeBanner";
-import { useRouter } from "next/router";
 import ServiceInfo from "../components/Home/ServiceInfo";
 import ProjectsAndWorks from "../components/Home/ProjectsAndWorks";
 import EmailMe from "../components/Home/EmailMe";
 import AboutMe from "../components/Home/AboutMe";
 import Footer from "../components/Home/Footer";
+import HeaderOptions from "../components/HeaderOptions";
 
 const DesignPage = () => {
   const router = useRouter();
@@ -29,6 +31,12 @@ const DesignPage = () => {
   return (
     <div>
       <HeadPages />
+      <HeaderOptions
+        props={{
+          startHidenHeader: true,
+          hideOnScrollTop: true,
+        }}
+      />
       <ChangeLang />
       <HomeBanner />
       <ServiceInfo />
