@@ -58,6 +58,7 @@ const HeaderOptions = (props: IPropsHeader) => {
             onClick={() => {
               setVisibleModal(!visibleModal);
             }}
+            color="#fff"
             size={45}
           />
         </div>

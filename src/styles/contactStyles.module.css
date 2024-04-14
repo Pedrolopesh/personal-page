@@ -20,11 +20,11 @@
 
 .containerSocialLinks button {
     width: 300px;
-    border: 1px solid #FF7897;
+    border: 1px solid #1573FF;
     cursor: pointer;
     max-width: 100%;
     border-radius: 15px;
-    background-color: #FF7897;
+    background-color: #1573FF;
     margin: 10px auto;
     font-size: 18px;
     padding: 15px 30px;
@@ -37,8 +37,8 @@
 .containerSocialLinks button:hover {
     transition: 0.4s;
     background-color: #fafafa;
-    color: #FF7897;
-    border: 1px solid #FF7897;
+    color: #1573FF;
+    border: 1px solid #1573FF;
 }
 
 .containerSocialLinks p {
