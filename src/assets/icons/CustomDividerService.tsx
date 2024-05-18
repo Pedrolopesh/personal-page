@@ -2,7 +2,13 @@ import React from "react";
 
 const CustomDividerService = ({ classParam }: { classParam?: string }) => {
   return (
-    <svg viewBox="0 0 1920 684" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width="1920"
+      height="684"
+      viewBox="0 0 1920 684"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <rect width="1920" height="446" fill="url(#paint0_linear_1729_2)" />
       <path
         d="M1920 459.201V603.631L1622.38 684L549.144 591.207L0 668.082V446H315.156L1920 459.201Z"

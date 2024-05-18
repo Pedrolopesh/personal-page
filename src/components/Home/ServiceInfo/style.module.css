@@ -135,6 +135,11 @@
   margin-top: -20vh;
 }
 
+.containerDivederServices svg {
+  width: 1920px;
+  height: 520px;
+}
+
 .hideTextLeft {
   opacity: 0;
 }

@@ -17,6 +17,17 @@
   padding: 40px 0;
   display: flex;
   justify-content: space-evenly;
+  text-align: center;
+}
+
+.containerTextComanys {
+  display: block;
+  margin: -10px auto 0 auto;
+}
+
+.containerTextComanys p {
+  font-size: 12px;
+  color: color(srgb 0.5411 0.5412 0.5412 / 0.3);
 }
 
 .containerCompanys > div {
@@ -52,6 +63,7 @@
   max-width: 100%;
   width: 60%;
   margin: 0 0 0 auto;
+  color: #fff;
 }
 
 .containerRightAboutMe, .containerLeftAboutMe h3 {

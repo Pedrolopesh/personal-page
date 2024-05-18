@@ -75,6 +75,8 @@
 }
 
 .CustomDividerBlock {
+  position: relative;
+  z-index: 99999;
     margin-top: -20vh;
     max-width: 100%;
 }
@@ -94,7 +96,7 @@
   }
 
   .CustomDividerBlock {
-    margin-top: -15vh;
+    margin-top: -30vh;
   }
 }
 

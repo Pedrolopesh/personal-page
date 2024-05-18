@@ -1,7 +1,9 @@
 import { useTranslation } from "react-i18next";
 import style from "./style.module.css";
+import { useRouter } from "next/router";
 
 const AbaoutMe = () => {
+  const router = useRouter();
   const { t } = useTranslation();
 
   const companys = [
@@ -11,6 +13,13 @@ const AbaoutMe = () => {
     { img: "/img/company_4.png" },
     { img: "/img/company_5.png" },
   ];
+
+  const redirectToProjects = () => {
+    router.push("/Projects");
+  };
+  const redirectToEmail = () => {
+    // window.scrollTo(0, 0);
+  };
 
   return (
     <div className={style.containerAboutMeBg}>
@@ -27,6 +36,11 @@ const AbaoutMe = () => {
               </div>
             );
           })}
+
+          <div className={style.containerTextComanys}>
+            <p>Copyright ©️ todos os direitos reservados a todas as marcas</p>
+            <p>Parcerias anteriores e empresas que passei</p>
+          </div>
         </div>
 
         <div className={style.containerFirstTextAboutMe}>
@@ -54,8 +68,12 @@ const AbaoutMe = () => {
 
           <div className={style.containerAboutMeActions}>
             <div className={style.buttonActions}>
-              <button>{t("button_about_me_hire")}</button>
-              <button>{t("button_about_me_know_more")}</button>
+              <button onClick={redirectToEmail}>
+                {t("button_about_me_hire")}
+              </button>
+              <button onClick={redirectToProjects}>
+                {t("button_about_me_know_more")}
+              </button>
             </div>
           </div>
         </div>
