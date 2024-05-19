@@ -15,10 +15,13 @@ const AbaoutMe = () => {
   ];
 
   const redirectToProjects = () => {
-    router.push("/Projects");
+    router.push("/Project");
   };
   const redirectToEmail = () => {
-    // window.scrollTo(0, 0);
+    const emailElement = document.getElementById("emailMe");
+    if (emailElement) {
+      emailElement.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (

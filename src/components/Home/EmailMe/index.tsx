@@ -23,7 +23,7 @@ const EmailMe = () => {
           />
         </div>
       )}
-      <div className={style.containerEmailMe}>
+      <div className={style.containerEmailMe} id="emailMe">
         <div
           className={
             showAnimation ? style.showContainerText : style.hideContainerText
