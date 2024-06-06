@@ -39,11 +39,10 @@ const AbaoutMe = () => {
               </div>
             );
           })}
-
-          <div className={style.containerTextComanys}>
-            <p>Copyright ©️ todos os direitos reservados a todas as marcas</p>
-            <p>Parcerias anteriores e empresas que passei</p>
-          </div>
+        </div>
+        <div className={style.containerTextComanys}>
+          <p>Copyright ©️ todos os direitos reservados a todas as marcas</p>
+          <p>Parcerias anteriores e empresas que passei</p>
         </div>
 
         <div className={style.containerFirstTextAboutMe}>
