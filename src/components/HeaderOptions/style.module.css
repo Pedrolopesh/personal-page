@@ -9,7 +9,8 @@
 }
 
 .selectedPath{
-    color: #72a1ff;
+    color: #72a1ff !important;
+    text-decoration: underline;
 }
 
 .unSelectedPath {
@@ -84,23 +85,25 @@
 }
 
 .hideMobileOptions {
+    transition: 0.5s;
     opacity: 0;
-    animation: animationHideMobileOptions 1s ease;
-    transform: translateY(-150%);
+    animation: animationHideMobileOptions 1s ease-out;
+    transform: translateX(150%);
 }
 
 @keyframes animationHideMobileOptions {
-    0% { transform: translateY(0%); } 100% { transform: translateY(-150%); }
+    0% { transform: translateX(0%); } 100% { transform: translateX(150%); }
 }
 
 .showMobileOptions {
+    transition: 0.5s;
     opacity: 1;
     animation: animationShowMobileOptions 1s ease;
-    transform: translateY(0%);
+    transform: translateX(0%);
 }
 
 @keyframes animationShowMobileOptions {
-    0% { transform: translateY(-150%); } 100% { transform: translateY(0%); }
+    0% { transform: translateX(150%); } 100% { transform: translateX(0%); }
 }
 
 .containerMobileOptions {
@@ -189,6 +192,11 @@
 
     .containerLinks {
         display: block;
+        color: #0b101e;
+    }
+
+    .containerLinks a {
+      color: #0b101e;
     }
 
     .containerMenuMobile {
