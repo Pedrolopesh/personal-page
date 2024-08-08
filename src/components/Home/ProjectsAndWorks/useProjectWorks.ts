@@ -9,7 +9,10 @@ const useProjectWorks = () => {
     router.push(url);
   };
 
-  const [selectedSection, setSelectedSection] = useState("Frontend");
+  const [selectedSection, setSelectedSection] = useState({
+    name: "Frontend",
+    position: 0,
+  });
 
   const projectAndWorks = [
     {
@@ -117,6 +120,8 @@ const useProjectWorks = () => {
     // },
   ];
 
+  const [totalProjectOptions, setTotalProjectOptions] = useState(0);
+
   return {
     showAnimation,
     setShowAnimation,
@@ -124,6 +129,8 @@ const useProjectWorks = () => {
     projectAndWorks,
     selectedSection,
     setSelectedSection,
+    setTotalProjectOptions,
+    totalProjectOptions,
   };
 };
 

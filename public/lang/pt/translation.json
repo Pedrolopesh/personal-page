@@ -16,11 +16,12 @@
   },
   "overview_text_banner": "Hello, I'm Pedro Lopes, Software Engineer with 5 years of experience in the IT market, feel free to learn more about me and my work.",
   "homeServicesInfo": {
-    "title_left": "Inovação que Impulsiona: Conheça os diferentes Serviços e Veja o que posso Fazer por Você",
-    "text_left": "Seja você uma startup buscando revolucionar o mercado, uma empresa consolidada buscando se manter à frente da concorrência ou pequeno empreendedor buscando inovação para o seu negócio, os serviços de software personalizados são a chave para o seu sucesso. Explore estes portfólio para ver exemplos de como transformei ideias em realidade para meus clientes e empresas por onde passei.",
-    "title_rigth": "16 Projetos Inovadores, 5 Anos de Excelência: Transformando Ideias em Realidade",
-    "text_rigth_0": "Minha abordagem e experiência foram a chave para o sucesso de 16 projetos ao longo dos anos. Sempre trabalhando muito próximo ao cliente para entender suas necessidades e transformá-las em soluções digitais inovadoras.",
-    "text_rigth_1": "anos de experiência",
+    "title_left": "Transformando Ideias em Realidade",
+    "text_left_1": "Seja você uma startup buscando revolucionar o mercado, uma empresa consolidada buscando se manter à frente da concorrência ou pequeno empreendedor buscando inovação para o seu negócio, estou aqui para ajudar.",
+    "text_left_2": "Explore meu portfólio e veja como meus serviços, experiências e projetos pessoais fizeram a diferença para outros clientes e equipes por onde passei.",
+    "title_rigth": "Transformando Ideias em Realidade",
+    "text_rigth_0": "Nos meus projetos pessoais, estudo, analiso, testo e implemento novas tecnologias para manter e expandir os conhecimentos adquiridos em 5 anos de experiência, ajudando empresas a se destacarem com produtos inovadores e experiências aprimoradas.",
+    "text_rigth_1": "Sinta-se a vontade para explorar meus projetos e trabalhos, e se precisar de ajuda para transformar sua ideia em realidade, entre em contato comigo.",
     "text_rigth_2": "Projetos Concluidos",
     "title_box_service_0": "UX/UI",
     "title_box_service_1": "Implementações Web",
@@ -35,9 +36,10 @@
     "tost_message": "E-mail enviado com sucesso!"
   },
   "home_about_me": {
-    "about_me_title": "Sobre",
-    "bout_me_description": "Comecei na tecnologia através da área de testes de softwares como QA realizando testes em produtos financeiros, em seguida, comecei com implementação e manutenção de códigos frontend, nessa área de atuação aprendi alguns frameworks javascript como vue.js, react, react-native e angular.",
-    "contact_me_title": "Entre em contato",
+    "about_me_title": "Um pouco sobre mim...",
+    "bout_me_description_0": "Minha jornada na tecnologia começou na área de testes de software como QA, onde realizei testes em produtos financeiros. Posteriormente, transitei para a implementação e manutenção de códigos frontend. Nessa área, adquiri expertise em diversos frameworks JavaScript, incluindo Vue.js, React, React Native e Angular.",
+    "bout_me_description_1": "Através dos conhecimentos adquiridos no frontend, expandi minhas habilidades para fullstack utilizando tecnologias como Node.js, Express e bancos de dados como MongoDB e SQ entre outras mais, aumentando minha versatilidade e possibilidades. Essa experiência me permite criar soluções completas, desde a interface do usuário até a lógica de negócios e gerenciamento de dados, oferecendo suporte abrangente para empresas em busca de produtos inovadores e experiências aprimoradas.",
+    "contact_me_title": "Como falar comigo? ",
     "contact_me_text": "Você pode entrar em contato comigo por e-mail ou rede social, eu costumo responder em 1 dia"
   },
   "home_footer": {
@@ -96,7 +98,7 @@
   "about_me_text_1": "Meu inicio na tecnologia foi através do trabalho em qualidade de softwares fazendo testes em produtos financeiros, após implementar manutenção no frontend desses produtos, neste momento aprendo alguns frameworks javascript como vue.js, react, react-native e angular.",
   "about_me_subtitle_2": "Contato",
   "about_me_text_2": "Você pode entrar em contato comigo por e-mail ou rede social, eu costumo responder em 3 dias",
-  "button_about_me_hire": "CONTRATE-ME",
+  "button_about_me_hire": "ENTRE EM CONTATO",
   "button_about_me_know_more": "SAIBA MAIS",
   "pretitle_services": "O QUE EU FAREI POR VOCÊ",
   "title_services": "Serviços",
@@ -110,7 +112,7 @@
   "comment_02": "Pedro é um excelente profissional e muito facil de se trabalhar, muitas ideias geniais e pertinentes.",
   "comment_03": "Sempre buscando a melhora em seus projetos e estudando novos métodos e tecnologias constantemente para facilitar suas aplicações.",
   "comment_04": "Recomendo o Pedro para qualquer tipo de serviço na área de tecnologia, um excelente profissional.",
-  "project_clients": "Projetos e Clientes",
+  "project_clients": "Projetos Pessoais e Empressas",
   "projects": {
     "electrolux": {
       "title": "Engenharia de Software na Electrolux",
