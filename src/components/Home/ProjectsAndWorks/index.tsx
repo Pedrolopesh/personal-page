@@ -1,4 +1,4 @@
-import { useCallback, useMemo } from "react";
+import { useCallback, useEffect, useMemo } from "react";
 import style from "./style.module.css";
 import useProjectWorks from "./useProjectWorks";
 import { t } from "i18next";
@@ -21,20 +21,42 @@ const ProjectsAndWorks = () => {
     setSelectedSection,
     setShowAnimation,
     showAnimation,
+    setTotalProjectOptions,
+    totalProjectOptions,
   } = useProjectWorks();
 
   const selectedSectionIndex = projectAndWorks.findIndex(
-    (section) => section.name === selectedSection
+    (section) => section.name === selectedSection.name
   );
+
+  useEffect(() => {
+    let position =
+      totalProjectOptions === projectAndWorks.length
+        ? 1
+        : totalProjectOptions + 1;
+    setTimeout(() => {
+      setSelectedSection({
+        name: projectAndWorks[position - 1].name,
+        position,
+      });
+      setTotalProjectOptions(position);
+    }, 6000);
+  }, [totalProjectOptions]);
 
   return (
     <div className={style.containerWorkAndProjects}>
-      <h1>Works and Projects</h1>
-
+      <h1>{t("project_clients")}</h1>
       <div className={style.containerWorkLinks}>
         {projectAndWorks.map((section, index) => (
           <div key={index}>
-            <button onClick={() => setSelectedSection(section.name)}>
+            <button
+              onClick={() =>
+                setSelectedSection({
+                  name: section.name,
+                  position: index + 1,
+                })
+              }
+            >
               <p>{section.name}</p>
             </button>
             <span
@@ -47,7 +69,6 @@ const ProjectsAndWorks = () => {
           </div>
         ))}
       </div>
-
       <div className={style.containerCards}>
         <>
           {projectAndWorks[selectedSectionIndex]?.projects.map(

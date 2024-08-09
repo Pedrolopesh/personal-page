@@ -17,12 +17,16 @@ const AbaoutMe = () => {
   const redirectToProjects = () => {
     router.push("/Project");
   };
-  const redirectToEmail = () => {
-    const emailElement = document.getElementById("emailMe");
-    if (emailElement) {
-      emailElement.scrollIntoView({ behavior: "smooth" });
-    }
+
+  const redirectToContact = () => {
+    router.push("/Contact");
   };
+  // const redirectToEmail = () => {
+  //   const emailElement = document.getElementById("emailMe");
+  //   if (emailElement) {
+  //     emailElement.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
 
   return (
     <div className={style.containerAboutMeBg}>
@@ -39,17 +43,16 @@ const AbaoutMe = () => {
               </div>
             );
           })}
-
-          <div className={style.containerTextComanys}>
-            <p>Copyright ©️ todos os direitos reservados a todas as marcas</p>
-            <p>Parcerias anteriores e empresas que passei</p>
-          </div>
+        </div>
+        <div className={style.containerTextComanys}>
+          <p>Copyright ©️ todos os direitos reservados a todas as marcas</p>
+          <p>Parcerias anteriores e empresas que passei</p>
         </div>
 
         <div className={style.containerFirstTextAboutMe}>
-          <div>
+          <div className="d-flex align-center">
             <img
-              src="./img/logo-gradient-blue.png"
+              src="./img/profile-pic.png"
               alt="pedrolopes logo"
               className={style.aboutMeIcon}
             />
@@ -58,7 +61,8 @@ const AbaoutMe = () => {
           <div className={style.containerRightAboutMe}>
             <div>
               <h3>{t("home_about_me.about_me_title")}</h3>
-              <p>{t("home_about_me.bout_me_description")}</p>
+              <p>{t("home_about_me.bout_me_description_0")}</p>
+              <p>{t("home_about_me.bout_me_description_1")}</p>
             </div>
           </div>
         </div>
@@ -71,7 +75,7 @@ const AbaoutMe = () => {
 
           <div className={style.containerAboutMeActions}>
             <div className={style.buttonActions}>
-              <button onClick={redirectToEmail}>
+              <button onClick={redirectToContact}>
                 {t("button_about_me_hire")}
               </button>
               <button onClick={redirectToProjects}>

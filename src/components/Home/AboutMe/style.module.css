@@ -22,7 +22,8 @@
 
 .containerTextComanys {
   display: block;
-  margin: -10px auto 0 auto;
+  margin: 10px auto 60px auto;
+  text-align: center;
 }
 
 .containerTextComanys p {
@@ -51,6 +52,7 @@
 
 .aboutMeIcon {
   display: flex;
+  margin: 0 50px 0 0;
 }
 
 .containerRightAboutMe, .containerLeftAboutMe {
@@ -74,6 +76,10 @@
   font-size: 1.3rem;
 }
 
+.containerRightAboutMe p:last-child {
+  margin-top: 45px;
+}
+
 .containerTextLeftAboutMe {
   max-width: 55%;
 }
@@ -94,6 +100,7 @@
 }
 
 .buttonActions button {
+  cursor: pointer;
   display: flex;
   padding: 10px 20px;
   border-radius: 10px;
@@ -101,6 +108,11 @@
   color: #fff;
   align-items: center;
   margin: 20px;
+  transition: 0.5s;
+}
+
+.buttonActions button:hover {
+  transform: translate(10px, -5px);
 }
 
 
@@ -110,15 +122,33 @@
   border: none;
 }
 
+.buttonActions button:first-child:hover {
+  box-shadow: -5px 5px 10px #3e70fcc7;
+}
+
+
+.buttonActions button:nth-child(2):hover {
+  box-shadow: -5px 5px 10px #ffffff;
+}
 
 .buttonActions button:nth-child(2) {
-  border: 2px solid #fff;
+  border: 2px solid #ffffff93;
   background: none;
+}
+
+@media screen and (max-width: 1500px) {
+  .aboutMeIcon {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   .containerRightAboutMe {
     margin: 0 0 0 70px;
+  }
+
+  .containerTextLeftAboutMe {
+    max-width: 100%;
   }
 }
 
@@ -134,7 +164,7 @@
   }
 
   .containerFirstTextAboutMe img {
-    width: 40%;
+    width: 60%;
     margin: 20px auto;
   }
 

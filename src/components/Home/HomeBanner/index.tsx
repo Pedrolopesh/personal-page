@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 // import style from 'SecondBanner.module.css'
 import { useTranslation } from "react-i18next";
 import Logo from "../../../assets/icons/logo";
-import style from "./HomeBanner.module.css";
+import style from "./style.module.css";
 import { Typewriter } from "react-simple-typewriter";
 import CustomDivider from "../../../assets/icons/CustomDivider";
 

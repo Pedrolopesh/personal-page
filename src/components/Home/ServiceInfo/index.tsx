@@ -90,7 +90,8 @@ const ServiceInfo = () => {
               } ${style.textBlockLeft}`}
             >
               <h3> {t("homeServicesInfo.title_left")} </h3>
-              <p> {t("homeServicesInfo.text_left")} </p>
+              <p>{t("homeServicesInfo.text_left_1")}</p>
+              <p>{t("homeServicesInfo.text_left_2")}</p>
 
               <a
                 className={style.containerService}
@@ -118,18 +119,9 @@ const ServiceInfo = () => {
               <p className={style.containerFootRightBlock_text}>
                 {t("homeServicesInfo.text_rigth_0")}
               </p>
-
-              <div className={style.blockTextFoot}>
-                <div className={style.blockTextFootInfo}>
-                  <h3> 5 </h3>
-                  <p> {t("homeServicesInfo.text_rigth_1")} </p>
-                </div>
-
-                <div className={style.blockTextFootInfo}>
-                  <h3> 16 </h3>
-                  <p> {t("homeServicesInfo.text_rigth_2")} </p>
-                </div>
-              </div>
+              <p className={style.containerFootRightBlock_text}>
+                {t("homeServicesInfo.text_rigth_1")}
+              </p>
             </div>
           </div>
         </div>
@@ -156,6 +148,9 @@ const ServiceInfo = () => {
           </div>
 
           <div
+            onClick={() => {
+              redirectTo("/Project");
+            }}
             className={`${
               showAnimation.serviceBlocksAnimation
                 ? style.showBlockServiceCard2
@@ -173,6 +168,9 @@ const ServiceInfo = () => {
           </div>
 
           <div
+            onClick={() => {
+              redirectTo("/Project");
+            }}
             className={`${
               showAnimation.serviceBlocksAnimation
                 ? style.showBlockServiceCard3
@@ -190,9 +188,9 @@ const ServiceInfo = () => {
           </div>
         </div>
       </div>
-      <div className={style.containerDivederServices}>
+      {/* <div className={style.containerDivederServices}>
         <CustomDividerService />
-      </div>
+      </div> */}
     </>
   );
 };

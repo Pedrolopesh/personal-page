@@ -2,15 +2,15 @@ import { useTranslation } from "react-i18next";
 import { FaRegHeart } from "react-icons/fa";
 import styles from "./style.module.css";
 import { FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
 import { ImBehance2 } from "react-icons/im";
-import { SiGmail } from "react-icons/si";
+import { useRouter } from "next/router";
 
 const Footer = () => {
+  const router = useRouter();
   const { t } = useTranslation();
 
   const redirectTo = (link: string) => {
-    console.log({ link });
+    router.push(link);
   };
 
   const footerLinks = {
@@ -88,23 +88,24 @@ const Footer = () => {
           <div className={styles.footerBlockLinks}>
             <p>{footerLinks.firstFooterLinks.title}</p>
             {footerLinks.firstFooterLinks.subLinks.map((item, index) => (
-              <a key={index} target="_blank" href={item.link} rel="noreferrer">
+              <button
+                key={`${index}_${index}`}
+                onClick={() => redirectTo(item.link)}
+              >
                 {item.text}
-              </a>
+              </button>
             ))}
           </div>
 
           <div className={styles.footerBlockLinks}>
             <p>{footerLinks.secondFooterLinks.title}</p>
             {footerLinks.secondFooterLinks.subLinks.map((item, index) => (
-              <a
+              <button
                 key={`${index}_${index}`}
-                target="_blank"
-                href={item.link}
-                rel="noreferrer"
+                onClick={() => redirectTo(item.link)}
               >
                 {item.text}
-              </a>
+              </button>
             ))}
           </div>
 
