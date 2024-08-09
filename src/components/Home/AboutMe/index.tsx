@@ -21,6 +21,7 @@ const AbaoutMe = () => {
   const redirectToContact = () => {
     router.push("/Contact");
   };
+
   // const redirectToEmail = () => {
   //   const emailElement = document.getElementById("emailMe");
   //   if (emailElement) {

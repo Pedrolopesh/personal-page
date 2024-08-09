@@ -29,19 +29,19 @@ const ProjectsAndWorks = () => {
     (section) => section.name === selectedSection.name
   );
 
-  useEffect(() => {
-    let position =
-      totalProjectOptions === projectAndWorks.length
-        ? 1
-        : totalProjectOptions + 1;
-    setTimeout(() => {
-      setSelectedSection({
-        name: projectAndWorks[position - 1].name,
-        position,
-      });
-      setTotalProjectOptions(position);
-    }, 6000);
-  }, [totalProjectOptions]);
+  // useEffect(() => {
+  //   let position =
+  //     totalProjectOptions === projectAndWorks.length
+  //       ? 1
+  //       : totalProjectOptions + 1;
+  //   setTimeout(() => {
+  //     setSelectedSection({
+  //       name: projectAndWorks[position - 1].name,
+  //       position,
+  //     });
+  //     setTotalProjectOptions(position);
+  //   }, 6000);
+  // }, [totalProjectOptions]);
 
   return (
     <div className={style.containerWorkAndProjects}>

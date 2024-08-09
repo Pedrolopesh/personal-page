@@ -10,6 +10,7 @@ import EmailMe from "../components/Home/EmailMe";
 import AboutMe from "../components/Home/AboutMe";
 import Footer from "../components/Home/Footer";
 import HeaderOptions from "../components/HeaderOptions";
+import StackAndSkills from "../components/Home/StackAndSkills";
 
 const DesignPage = () => {
   const router = useRouter();
@@ -41,6 +42,7 @@ const DesignPage = () => {
       <HomeBanner />
       <ServiceInfo />
       <ProjectsAndWorks />
+      <StackAndSkills />
       <EmailMe />
       <AboutMe />
       <Footer />

@@ -1,0 +1,45 @@
+.ContainerSectionStacks {
+  display: block;
+  text-align: center;
+}
+
+.ContainerSectionStacks > h2 {
+  color: #fff;
+}
+
+.ContainerSectionStacks > p {
+  color: #fff;
+}
+
+.ContainerStacksAndSkills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.BlockStack {
+  width: 160px;
+  height: 165px;
+  margin: 10px;
+  border-bottom: 10px solid #ffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.BlockStack:hover {
+  transform: translate(10px, -5px);
+  border: 2px solid #ffffff93;
+}
+
+.BlockStack > svg{
+  margin: 15px 0 0 0;
+}
+
+.BlockStack > h2{
+  color: #fff;
+  margin: 10px 0 0 0;
+}
