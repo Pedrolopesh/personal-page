@@ -1,33 +1,48 @@
 import useStackAndSkills from "./useStackAndSkills";
 import style from "./style.module.css";
+import { t } from "i18next";
 
 const StackAndSkills = () => {
-  const { stacksAndSkills, setIsHovered, isHovered } = useStackAndSkills();
+  const {
+    stacksAndSkills,
+    setIsHovered,
+    isHovered,
+    showStacksQuantity,
+    redirectToStackPage,
+  } = useStackAndSkills();
 
   return (
     <div className={style.ContainerSectionStacks}>
-      <h2>Stack and Skills</h2>
-      <p>
-        Clique na imagem de uma das tecnologias para entender como utilizei, em
-        qual projeto e resultados da utilização
-      </p>
+      <div className={style.containerStackTexts}>
+        <h2>{t("home_stacks_skills.title")}</h2>
+        <p>{t("home_stacks_skills.description")}</p>
+      </div>
 
       <div className={style.ContainerStacksAndSkills}>
-        {stacksAndSkills.map((stack, index) => (
-          <div
-            className={style.BlockStack}
-            key={index}
-            style={{
-              backgroundColor: `${stack.bgColor}`,
-              boxShadow: isHovered ? `box-shadow: -5px 5px 10px #ffffff;` : ``,
-            }}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            {stack.icon}
-            <h2>{stack.name}</h2>
-          </div>
-        ))}
+        {stacksAndSkills.map((stack, index) => {
+          if (index < showStacksQuantity) {
+            return (
+              <div
+                className={style.BlockStack}
+                key={index}
+                style={{
+                  backgroundColor: `${stack.bgColor}`,
+                  boxShadow: isHovered
+                    ? `box-shadow: -5px 5px 10px #ffffff;`
+                    : ``,
+                }}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+              >
+                {stack.icon}
+                <h2>{stack.name}</h2>
+              </div>
+            );
+          }
+        })}
+      </div>
+      <div className={style.hidingStacks}>
+        <button onClick={redirectToStackPage}>ver mais</button>
       </div>
     </div>
   );

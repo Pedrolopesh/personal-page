@@ -29,10 +29,18 @@ import {
   SiWebpack,
 } from "react-icons/si";
 import { RiFirebaseFill } from "react-icons/ri";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import { redirect } from "next/dist/server/api-utils";
 
 const useStackAndSkills = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const [showStacksQuantity, setShowStacksQuantity] = useState(7);
+  const router = useRouter();
+
+  const redirectToStackPage = () => {
+    router.push("/Stacks");
+  };
 
   const iconSize = 60;
 
@@ -184,10 +192,24 @@ const useStackAndSkills = () => {
     },
   ];
 
+  useEffect(() => {
+    if (window) {
+      const windowWidth = window.innerWidth;
+
+      if (windowWidth < 800) {
+        setShowStacksQuantity(7);
+      } else {
+        setShowStacksQuantity(14);
+      }
+    }
+  }, []);
+
   return {
     stacksAndSkills,
     setIsHovered,
     isHovered,
+    showStacksQuantity,
+    redirectToStackPage,
   };
 };
 
