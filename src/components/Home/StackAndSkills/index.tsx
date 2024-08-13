@@ -4,7 +4,7 @@ import { t } from "i18next";
 
 const StackAndSkills = () => {
   const {
-    stacksAndSkills,
+    internStacksAndSkills,
     setIsHovered,
     isHovered,
     showStacksQuantity,
@@ -19,7 +19,7 @@ const StackAndSkills = () => {
       </div>
 
       <div className={style.ContainerStacksAndSkills}>
-        {stacksAndSkills.map((stack, index) => {
+        {internStacksAndSkills.map((stack, index) => {
           if (index < showStacksQuantity) {
             return (
               <div

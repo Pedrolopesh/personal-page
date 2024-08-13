@@ -1,0 +1,84 @@
+.stackGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 35px 0;
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.StackCard {
+    display: flex;
+    background-color: rgb(57, 57, 57);
+    width: 590px;
+    height: 240px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+
+.StackCardIcon {
+  width: 450px;
+  height: 120px;
+  color: #fff;
+  border-bottom: 10px solid #ffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 5px 15px 25px;
+}
+
+.StackCardIcon h2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.stackCardText {
+  display: block;
+  color: #fff;
+  margin: 0 40px 0 20px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+.stackCardText p {
+  margin: 0;
+}
+
+.containerExternalProjectLinks {
+  display: flex;
+  justify-content: end;
+  /* margin: 20px 30px 0 0; */
+}
+
+.blockStackProjectLinks {
+  display: flex;
+  color: #A5A5A5;
+  align-items: end;
+  margin: 30px 0 0 0;
+}
+
+.blockStackProjectLinks p {
+  font-size: 14px;
+  margin: 0 25px 0 0;
+}
+
+.containerExternalProjectLinks a {
+  display: flex;
+  margin: 5px;
+}
+
+.containerExternalProjectLinks svg {
+  transition: 0.5s;
+  border-radius: 50px;
+}
+
+.containerExternalProjectLinks svg:hover {
+  transform: translate(5px, -5px);
+  box-shadow: -5px 5px 10px #ffffff;
+}

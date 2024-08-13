@@ -1,10 +1,9 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
-// import style from 'SecondBanner.module.css'
 import { useTranslation } from "react-i18next";
 import Logo from "../../../assets/icons/logo";
 import style from "./style.module.css";
 import { Typewriter } from "react-simple-typewriter";
-import CustomDivider from "../../../assets/icons/CustomDivider";
+import CustomDivider from "../../CustomDivider";
 
 const HomeBanner = () => {
   const { t } = useTranslation();
@@ -68,9 +67,7 @@ const HomeBanner = () => {
           </div>
         </div>
       </div>
-      <div className={style.CustomDividerBlock}>
-        <CustomDivider />
-      </div>
+      <CustomDivider />
     </div>
   );
 };
