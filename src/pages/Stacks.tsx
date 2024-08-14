@@ -1,13 +1,7 @@
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
-
 import HeadPages from "../components/HeadPages";
 import ChangeLang from "../components/ChangeLang";
-import HomeBanner from "../components/Home/HomeBanner";
-import ServiceInfo from "../components/Home/ServiceInfo";
-import ProjectsAndWorks from "../components/Home/ProjectsAndWorks";
-import EmailMe from "../components/Home/EmailMe";
-import AboutMe from "../components/Home/AboutMe";
 import Footer from "../components/Home/Footer";
 import HeaderOptions from "../components/HeaderOptions";
 import StackAndSkills from "../components/Stacks/StacksAndSkills";
@@ -42,7 +36,7 @@ const DesignPage = () => {
       <BannerStacks />
       <ChangeLang />
       <StackAndSkills />
-      <Footer />
+      <Footer thanksForVisit={false} />
     </div>
   );
 };

@@ -41,6 +41,18 @@ const LinkOptions = (routerParam: any) => {
             </a>
           </Link>
 
+          <Link href="/Stacks">
+            <a
+              className={`${
+                router.pathname === "/Stacks"
+                  ? style.selectedPath
+                  : style.unSelectedPath
+              }`}
+            >
+              {t("header_options.stacks")}
+            </a>
+          </Link>
+
           <Link href="/Contact">
             <a
               className={`${

@@ -3,6 +3,7 @@
     "home": "Home",
     "projects": "Projetos",
     "contact": "Contato",
+    "stacks": "Tecnologias",
     "button_design_option": "Design",
     "button_code_option": "Dev"
   },
@@ -310,6 +311,8 @@
     "Vue": "Com uma experiência de 5 anos em Vue.js, pude aplicar conceitos como componentização, gerenciamento de estado com VueX e programação declarativa em projetos como o Link Leito, The Chat, Quest Game e em empresas como Blue Token e Toro Token."
   },
   "stacks_page": {
+    "title_banner": "Tecnologias e abordagens",
+    "pre_description": "Veja a baixo as tecnologias que utilizei em projetos pessoais, empresas que passei e clients que antendi ao longo dos anos de desenvolvimento de software",
     "react_description": "React.js é uma biblioteca JavaScript popular para criar interfaces interativas e escaláveis. Em meus projetos, usei React.js para desenvolver interfaces eficientes e fáceis de manter, utilizando componentes reutilizáveis que aprimoram a experiência do usuário.",
     "react_callForLink": "clique em um dos ícones e veja onde e como utilzei Ract.js",
     "node_description": "Node.js é uma plataforma que executa JavaScript fora do navegador. Utilizei Node.js para construir APIs RESTful, manipulando dados complexos e aplicando diferentes regras de negócio para solucionar problemas específicos.",

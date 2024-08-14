@@ -1,15 +1,25 @@
 import { IoLanguageOutline } from "react-icons/io5";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import i18next from "i18next";
 import Style from "./style.module.css";
 
 const ChangeLang = () => {
-  const [visibleDropdown, setVisibleDropdown] = useState(true);
+  const [visibleDropdown, setVisibleDropdown] = useState(false);
 
   const changeLangFunc = (newLang: string) => {
     i18next.changeLanguage(newLang);
     setVisibleDropdown(!visibleDropdown);
+    const htmlSelection = document.querySelector("html");
+    htmlSelection.lang = newLang === "pt" ? "pt-br" : "en";
   };
+
+  useEffect(() => {
+    const language = navigator.language;
+    if (language) {
+      changeLangFunc(language === "pt-BR" ? "pt" : "en");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div>

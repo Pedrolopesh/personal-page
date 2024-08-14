@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { ImBehance2 } from "react-icons/im";
 import { useRouter } from "next/router";
 
-const Footer = () => {
+const Footer = ({ thanksForVisit = true }) => {
   const router = useRouter();
   const { t } = useTranslation();
 
@@ -78,10 +78,12 @@ const Footer = () => {
 
   return (
     <div className={styles.continerFooter}>
-      <div className={styles.continerFloatText}>
-        <p>{t("home_footer.thanks_visit")}</p>
-        <FaRegHeart size={40} color="#fff" />
-      </div>
+      {thanksForVisit && (
+        <div className={styles.continerFloatText}>
+          <p>{t("home_footer.thanks_visit")}</p>
+          <FaRegHeart size={40} color="#fff" />
+        </div>
+      )}
 
       <footer className={styles.continerFooterLinks}>
         <div className={styles.contentFooterLinks}>

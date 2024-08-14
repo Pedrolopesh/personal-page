@@ -1,12 +1,12 @@
 import style from "./style.module.css";
 import CustomDivider from "../../CustomDivider";
+import { t } from "i18next";
 const BannerStacks = () => {
   return (
     <div>
       <div className={style.ContainerBannerStacks}>
-        <img src="/img/bg-stacks.png" alt="banner stack" />
         <div className={style.titleBannerStack}>
-          <p>Tecnologias e abordagens</p>
+          <p>{t("stacks_page.title_banner")}</p>
         </div>
       </div>
       <CustomDivider />

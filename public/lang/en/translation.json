@@ -3,6 +3,7 @@
     "home": "Home",
     "projects": "Projects",
     "contact": "Contact",
+    "stacks": "Stacks",
     "button_design_option": "Design",
     "button_code_option": "Dev"
   },
@@ -308,6 +309,8 @@
     "Vue": "With 5 years of experience in Vue.js, I was able to apply concepts such as componentization, state management with VueX, and declarative programming in projects such as Link Leito, The Chat, Quest Game, and companies like Blue Token and Toro Token."
   },
   "stacks_page": {
+    "title_banner": "Stack and Skills",
+    "pre_description": "See below the technologies used in personal projects, companies I have worked with and clients I have served over the years of software development",
     "react_description": "React.js is a popular JavaScript library for creating interactive and scalable user interfaces. In my projects, I used React.js to develop efficient and maintainable interfaces, utilizing reusable components that enhance the user experience.",
     "react_callForLink": "click on one of the icons to see where and how I used React.js",
     "node_description": "Node.js is a platform that runs JavaScript outside the browser. I used Node.js to build RESTful APIs, handling complex data and applying various business rules to solve specific problems.",

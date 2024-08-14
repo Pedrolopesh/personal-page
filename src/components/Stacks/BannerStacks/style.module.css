@@ -10,11 +10,12 @@
   display: flex;
   height: 545px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.299);
-  position: absolute;
-  top: 0;
+  background-image: url('/img/stack-banner-bg.png');
+  background-repeat:no-repeat;
+  background-position: center center;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .titleBannerStack > p {

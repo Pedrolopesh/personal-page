@@ -2,13 +2,16 @@ import style from "./style.module.css";
 import useStacksAndSkills from "./useStackAndSkills";
 import { TbWorldCode } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
+import { t } from "i18next";
 
 const StacksAndSkills = () => {
   const { internStacksAndSkills } = useStacksAndSkills();
 
   return (
     <div>
-      <h2>StacksAndSkills</h2>
+      <div className={style.containerStackDescription}>
+        <p>{t("stacks_page.pre_description")}</p>
+      </div>
 
       <div className={style.stackGrid}>
         {internStacksAndSkills.map((stack, index) => {
@@ -30,7 +33,11 @@ const StacksAndSkills = () => {
                 <div>
                   <p>{stack.description}</p>
                   <div className={style.blockStackProjectLinks}>
-                    <p>{stack.callForLink}</p>
+                    {stack.projectLink !== "" || stack.githubLink !== "" ? (
+                      <p>{stack.callForLink}</p>
+                    ) : (
+                      ""
+                    )}
                     <div className={style.containerExternalProjectLinks}>
                       {stack.projectLink && (
                         <a
