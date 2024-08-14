@@ -11,11 +11,16 @@ const ChangeLang = () => {
     setVisibleDropdown(!visibleDropdown);
     const htmlSelection = document.querySelector("html");
     htmlSelection.lang = newLang === "pt" ? "pt-br" : "en";
+    localStorage.setItem("lang", newLang);
   };
 
   useEffect(() => {
+    const savedLang = localStorage.getItem("lang");
     const language = navigator.language;
-    if (language) {
+
+    if (savedLang) {
+      changeLangFunc(savedLang);
+    } else if (language) {
       changeLangFunc(language === "pt-BR" ? "pt" : "en");
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps

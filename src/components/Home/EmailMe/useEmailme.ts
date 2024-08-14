@@ -22,6 +22,7 @@ const useEmailMe = () => {
         return data.json();
       })
       .catch((err) => {
+        console.log(err);
         console.error(err);
       });
   };
@@ -33,7 +34,6 @@ const useEmailMe = () => {
       }, 8000);
     }
   }, [viewToast]);
-
 
   const handleScroll = () => {
     const scrollPos = window.scrollY;

@@ -21,11 +21,12 @@
     "description": "Click see more to see the technologies and approaches I used throughout the projects I worked on and understand more about how I used them and the results of their use in the project"
   },
   "homeServicesInfo": {
-    "title_left": "Innovation that Drives: Explore Different Services and See What We Can Do for You",
-    "text_left": "Whether you're a startup looking to revolutionize the market or an established company striving to stay ahead of the competition, our custom software services are the key to your success. Explore our portfolio to see examples of how we turn ideas into reality for my clients and companies I've worked with.",
-    "title_rigth": "16 Innovative Projects, 5 Years of Excellence: Turning Ideas into Reality",
-    "text_rigth_0": "My approach and experience have been the key to the success of 16 projects over the years. I work very closely with the client to understand their needs and turn them into innovative digital solutions.",
-    "text_rigth_1": "years of experience",
+    "title_left": "Turning Ideas into Reality",
+    "text_left_1": "Whether you are a startup looking to revolutionize the market, an established company seeking to stay ahead of the competition, or a small entrepreneur seeking innovation for your business, I'm here to help.",
+    "text_left_2": "Explore my portfolio and see how my services, experiences, and personal projects have made a difference for other clients and teams I've worked with.",
+    "title_rigth": "Turning Ideas into Reality",
+    "text_rigth_0": "In my personal projects, I study, analyze, test, and implement new technologies to maintain and expand the knowledge acquired over 5 years of experience, helping companies stand out with innovative products and enhanced experiences.",
+    "text_rigth_1": "Feel free to explore my projects and work, and if you need help turning your idea into reality, get in touch with me.",
     "text_rigth_2": "Completed Projects",
     "title_box_service_0": "UX/UI",
     "title_box_service_1": "Web Implementation",
@@ -41,6 +42,8 @@
   },
   "home_about_me": {
     "about_me_title": "About Me",
+    "bout_me_description_0": "My journey in technology began in the field of software testing as a QA, where I conducted tests on financial products. Later, I transitioned to the implementation and maintenance of frontend code. In this area, I gained expertise in various JavaScript frameworks, including Vue.js, React, React Native, and Angular.",
+    "bout_me_description_1": "Through the knowledge acquired in frontend development, I expanded my skills to fullstack using technologies such as Node.js, Express, and databases like MongoDB and SQL, among others, increasing my versatility and possibilities. This experience allows me to create complete solutions, from user interfaces to business logic and data management, providing comprehensive support for companies seeking innovative products and enhanced experiences.",
     "bout_me_description": " I start at tecnology through Quality and assurance job doing tests in financial products, after I implement maintenance in frontend of this products, in this moment i learn some javascript frameworks like vue.js, react, react-native and angular.",
     "contact_me_title": "Get in Touch",
     "contact_me_text": "You can contact me by email or social midia, I usualy answer in 3 days"

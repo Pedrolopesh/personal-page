@@ -51,7 +51,7 @@
     border: 1px solid white;
     background: linear-gradient(to right,#e2986a,#25067d);
     position: fixed;
-    z-index: 99999;
+    z-index: 999999;
     top: 90px;
 }
 
